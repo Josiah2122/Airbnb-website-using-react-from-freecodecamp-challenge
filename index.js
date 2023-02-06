@@ -14,13 +14,16 @@ function Page() {
   return(
    <Card 
     key={data.id}
-    image={data.coverImg}
-    rating={data.stats.rating}
-    reviewCount={data.stats.reviewCount}
-    country={data.location}
-    title={data.title}
-    price={data.price}
-    status={data.status}
+    {...data}
+    // passing all these in one line
+    // image={data.coverImg}
+    // rating={data.stats.rating}
+    // reviewCount={data.stats.reviewCount}
+    // country={data.location}
+    // title={data.title}
+    // price={data.price}
+    // status={data.status}
+    // openSpots={data.openSpots}
    />
   ) 
  })
